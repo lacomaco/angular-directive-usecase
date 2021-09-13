@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-use-mouse',
-  templateUrl: './use-mouse.component.html',
-  styleUrls: ['./use-mouse.component.css']
+  template: `
+    <div appMouse #mouse="appMouseF">
+      <p>The mouse position is {{ mouse.state.x }}, {{ mouse.state.y }}</p>
+    </div>
+  `
 })
 export class UseMouseComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
