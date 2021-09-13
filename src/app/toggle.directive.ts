@@ -13,7 +13,7 @@ type Toggle = {
 export class ToggleDirective {
   on = true;
 
-  @Input('toggleOn')
+  @Input('appToggleOn')
   initialState = true;
 
   constructor(
